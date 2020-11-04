@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201008152834_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201008152834_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201008153628_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201008153628_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201010202910_login2.cs" />
+    <Compile Remove="Migrations\20201010202910_login2.Designer.cs" />
+    <Compile Remove="Migrations\20201010211848_logowanie.cs" />
+    <Compile Remove="Migrations\20201010211848_logowanie.Designer.cs" />
+    <Compile Remove="Migrations\20201010212009_logowanie.cs" />
+    <Compile Remove="Migrations\20201010212009_logowanie.Designer.cs" />
+    <Compile Remove="Migrations\20201010212121_logowanie.cs" />
+    <Compile Remove="Migrations\20201010212121_logowanie.Designer.cs" />
+    <Compile Remove="Migrations\20201010212640_logowanie.cs" />
+    <Compile Remove="Migrations\20201010212640_logowanie.Designer.cs" />
+    <Compile Remove="Migrations\20201011155340_usersupdate.cs" />
+    <Compile Remove="Migrations\20201011155340_usersupdate.Designer.cs" />
+    <Compile Remove="Migrations\20201011161802_nieweim.cs" />
+    <Compile Remove="Migrations\20201011161802_nieweim.Designer.cs" />
+    <Compile Remove="Migrations\20201013190233_announces.cs" />
+    <Compile Remove="Migrations\20201013190233_announces.Designer.cs" />
+    <Compile Remove="Migrations\20201013190753_announces.cs" />
+    <Compile Remove="Migrations\20201013190753_announces.Designer.cs" />
+    <Compile Remove="Migrations\20201013190844_announces.cs" />
+    <Compile Remove="Migrations\20201013190844_announces.Designer.cs" />
+    <Compile Remove="Migrations\20201013190938_announces.cs" />
+    <Compile Remove="Migrations\20201013190938_announces.Designer.cs" />
+    <Compile Remove="Migrations\20201013193440_announcesFix.cs" />
+    <Compile Remove="Migrations\20201013193440_announcesFix.Designer.cs" />
+    <Compile Remove="Migrations\20201013193802_announcesRemove.cs" />
+    <Compile Remove="Migrations\20201013193802_announcesRemove.Designer.cs" />
+    <Compile Remove="Migrations\20201101141731_id-change.cs" />
+    <Compile Remove="Migrations\20201101141731_id-change.Designer.cs" />
+    <Compile Remove="Migrations\20201101141855_id-change.cs" />
+    <Compile Remove="Migrations\20201101141855_id-change.Designer.cs" />
+    <Compile Remove="Migrations\20201101143558_id-change.cs" />
+    <Compile Remove="Migrations\20201101143558_id-change.Designer.cs" />
+    <Compile Remove="Migrations\20201101143718_id-change.cs" />
+    <Compile Remove="Migrations\20201101143718_id-change.Designer.cs" />
+    <Compile Remove="Migrations\20201101143812_id-change2.cs" />
+    <Compile Remove="Migrations\20201101143812_id-change2.Designer.cs" />
+    <Compile Remove="Migrations\20201101144231_id-change2.cs" />
+    <Compile Remove="Migrations\20201101144231_id-change2.Designer.cs" />
+    <Compile Remove="Migrations\20201101144359_id-change2.cs" />
+    <Compile Remove="Migrations\20201101144359_id-change2.Designer.cs" />
+    <Compile Remove="Migrations\20201101144415_id-change2.cs" />
+    <Compile Remove="Migrations\20201101144415_id-change2.Designer.cs" />
+    <Compile Remove="Migrations\20201101144822_id-change3.cs" />
+    <Compile Remove="Migrations\20201101144822_id-change3.Designer.cs" />
+    <Compile Remove="Migrations\20201101144950_new-announces.cs" />
+    <Compile Remove="Migrations\20201101144950_new-announces.Designer.cs" />
+    <Compile Remove="Migrations\20201101145614_czemuniedziala.cs" />
+    <Compile Remove="Migrations\20201101145614_czemuniedziala.Designer.cs" />
+    <Compile Remove="Migrations\20201101145830_new-announces.cs" />
+    <Compile Remove="Migrations\20201101145830_new-announces.Designer.cs" />
+    <Compile Remove="Migrations\20201101145853_new-announces.cs" />
+    <Compile Remove="Migrations\20201101145853_new-announces.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+
+</Project>
