@@ -14,6 +14,9 @@ namespace TogevaAPI2.Models
         public string password { get; set; }
 
         public List<Announce> Announces { get; set; }
+
+        public string newPassword { get; set; }
+        public string firstName { get; set; }
       
     }
 }

@@ -29,10 +29,29 @@ namespace TogevaAPI2.Controllers
         }
 
         [HttpPost]
-        [Route("register")]
-        public async Task<ActionResult> RegisterUser([FromBody] User model)
+        [Route("np")]
+        public async Task<ActionResult> UpdatePassword([FromBody] User model)
         {
             User user = (User)_context.Users.Where(u => u.Email == model.Email ).FirstOrDefault();
+            if(user!=null)
+            {
+                if (user.password == model.password)
+                {
+                    user.password = model.newPassword;
+                    await _context.SaveChangesAsync();
+                    //await _context.SaveChangesAsync();
+                    return Ok(model);
+                }
+            }            
+            return BadRequest();
+        }
+        [HttpPost("register")]
+        
+        public async Task<ActionResult> RegisterUser([FromBody] User model)
+        {
+            User user = (User)_context.Users.Where(u => u.Email == model.Email).FirstOrDefault();
+            User b = new User();
+            model.Id = b.Id; //not proud of that
             if (user == null)
             {
                 _context.Add(model);
@@ -44,17 +63,10 @@ namespace TogevaAPI2.Controllers
 
 
         // GET: api/Users1/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        [HttpPost("user")]
+        public async Task<User> GetUser(User user)
         {
-            var user = await _context.Users.FindAsync("UserId",id);
-
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return user;
+            return  _context.Users.Where(u => u.Id == user.Id).FirstOrDefault();
         }
 
        

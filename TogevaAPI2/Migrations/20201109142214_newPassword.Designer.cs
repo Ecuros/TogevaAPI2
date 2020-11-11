@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TogevaAPI2.Models;
 
 namespace TogevaAPI2.Migrations
 {
     [DbContext(typeof(TogevaDBContext))]
-    partial class TogevaDBContextModelSnapshot : ModelSnapshot
+    [Migration("20201109142214_newPassword")]
+    partial class newPassword
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,16 +31,10 @@ namespace TogevaAPI2.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("date")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("location")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("sport")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AnnounceId");
@@ -96,9 +92,6 @@ namespace TogevaAPI2.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("firstName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("newPassword")
