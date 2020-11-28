@@ -32,6 +32,7 @@ namespace TogevaAPI2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<TogevaDBContext>();
             services.AddDbContext<TogevaDBContext>(options =>

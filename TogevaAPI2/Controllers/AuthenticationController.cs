@@ -32,9 +32,7 @@ namespace TogevaAPI2.Controllers
         [Route("logowanie")]
         public IActionResult Login([FromBody] User model)
         {
-            // var user = await userManager.FindByNameAsync(model.UserName);
-            //bool ispasswordcorrect = await userManager.CheckPasswordAsync(user, model.password);
-            //if (user != null && ispasswordcorrect)
+     
             User user = (User)_context.Users.Where(u => u.Email == model.Email && u.password == model.password).FirstOrDefault();
             if (user != null)
             {

@@ -69,9 +69,14 @@ namespace TogevaAPI2.Controllers
             return  _context.Users.Where(u => u.Id == user.Id).FirstOrDefault();
         }
 
-       
+        [HttpPost("email")]
+        public User getAnnouncesByUser([FromBody] Announce announce)
+        {
+            return _context.Users.Where(u => u.Id == announce.UserId).FirstOrDefault();
+        }
+
         // DELETE: api/Users1/5
-        [HttpDelete("{id}")]
+        /*[HttpDelete("{id}")]
         public async Task<ActionResult<User>> DeleteUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -84,11 +89,11 @@ namespace TogevaAPI2.Controllers
             await _context.SaveChangesAsync();
 
             return user;
-        }
+        }*/
 
-        private bool UserExists(int id)
+        /*private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
-        }
+        }*/
     }
 }

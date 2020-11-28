@@ -229,3 +229,6 @@ E:\Inzynierka\TogevaAPI2\TogevaAPI2\bin\Debug\netcoreapp3.1\Microsoft.Extensions
 E:\Inzynierka\TogevaAPI2\TogevaAPI2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 E:\Inzynierka\TogevaAPI2\TogevaAPI2\obj\Debug\netcoreapp3.1\TogevaAPI2.csproj.CoreCompileInputs.cache
 E:\Inzynierka\TogevaAPI2\TogevaAPI2\obj\Debug\netcoreapp3.1\TogevaAPI2.MvcApplicationPartsAssemblyInfo.cache
+E:\Inzynierka\TogevaAPI2\TogevaAPI2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+E:\Inzynierka\TogevaAPI2\TogevaAPI2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Inzynierka\TogevaAPI2\TogevaAPI2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
